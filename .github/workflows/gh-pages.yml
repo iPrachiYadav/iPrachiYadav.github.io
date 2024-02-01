@@ -13,6 +13,7 @@ jobs:
   build:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
+    
     permissions:
       contents: write
     
@@ -23,7 +24,7 @@ jobs:
         with:
           node-version: 20 # Make sure you have the correct Node version here
       - run: npm ci
-      - run: npm run build-github
+      - run: npm run predeploy
       - name: Commit files
         id: auto-commit-action
         uses: stefanzweifel/git-auto-commit-action@v5
