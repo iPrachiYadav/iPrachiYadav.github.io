@@ -2,7 +2,7 @@ name: build-for-github-pages
 on:
   push:
     branches:
-      - main # Make sure you have the correct branch name here
+      - master # Make sure you have the correct branch name here
 jobs:
   build:
     runs-on: ubuntu-latest
