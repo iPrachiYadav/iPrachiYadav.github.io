@@ -6,8 +6,10 @@
   "source": "src/index.html",
   "scripts": {
     "start": "parcel",
-    "build": "parcel build"
-  },  
+    "build": "parcel build",
+    "predeploy": "parcel build ./*.html --public-url https://github.com/iPrachiYadav/iPrachiYadav.github.io",
+    "deploy": "gh-pages -d dist"
+  },
   "license": "ISC",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.11.0",
@@ -17,6 +19,7 @@
   "dependencies": {
     "@popperjs/core": "^2.11.6",
     "bootstrap": "^5.2.3",
+    "gh-pages": "^6.1.1",
     "jquery": "^3.6.3",
     "popper.js": "^1.16.1",
     "vanilla-tilt": "^1.8.0"
